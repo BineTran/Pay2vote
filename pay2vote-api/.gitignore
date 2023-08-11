@@ -1,0 +1,12 @@
+node_modules/
+
+dist/
+
+.metals/
+
+.env
+
+.env.development
+.env.production
+
+.vscode/

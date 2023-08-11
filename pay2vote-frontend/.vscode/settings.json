@@ -1,4 +1,22 @@
 {
+    "cSpell.words": [
+        "BANKHUB",
+        "Bien",
+        "bufferutil",
+        "CASSO",
+        "chartjs",
+        "coverflow",
+        "Datasource",
+        "getallforad",
+        "headlessui",
+        "Infor",
+        "odometerjs",
+        "qrcode",
+        "Skeletion",
+        "Swiper",
+        "tailwindcss",
+        "toastify"
+    ],
     "files.watcherExclude": {
         "**/target": true
     }

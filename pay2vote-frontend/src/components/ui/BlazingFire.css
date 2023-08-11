@@ -1,0 +1,74 @@
+:root {
+    --blazing-color: rgba(169, 85, 247, 0.584);
+    /* Default fire color */
+    --blazing-mid-glow: rgba(232, 122, 177, 0.365);
+    --blazing-glow-color: rgba(236, 72, 154, 0.616);
+    /* Default glow color */
+}
+
+.fire-box {
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+        0 3px 20px var(--blazing-color),
+        0 0 20px var(--blazing-color),
+        0 0 10px var(--blazing-glow-color),
+        4px -5px 6px var(--blazing-glow-color),
+        -4px -10px 10px var(--blazing-glow-color),
+        0 -10px 30px var(--blazing-glow-color);
+    animation: Blazing 2s infinite alternate linear;
+}
+
+@keyframes Blazing {
+    0% {
+        box-shadow:
+            0 3px 20px var(--blazing-color),
+            0 0 20px var(--blazing-color),
+            0 0 10px var(--blazing-mid-glow),
+            4px -5px 6px var(--blazing-glow-color),
+            -4px -10px 10px var(--blazing-glow-color),
+            0 -10px 30px var(--blazing-glow-color);
+    }
+
+    25% {
+        box-shadow:
+            0 3px 20px var(--blazing-color),
+            0 0 30px var(--blazing-color),
+            0 0 20px var(--blazing-mid-glow),
+            0 0 5px var(--blazing-glow-color),
+            -2px -5px 5px var(--blazing-glow-color),
+            3px -10px 10px var(--blazing-glow-color),
+            -4px -15px 20px var(--blazing-glow-color);
+    }
+
+    50% {
+        box-shadow:
+            0 3px 20px var(--blazing-color),
+            0 0 20px var(--blazing-color),
+            0 -5px 10px var(--blazing-mid-glow),
+            -2px -5px 5px var(--blazing-glow-color),
+            3px -10px 10px var(--blazing-glow-color),
+            -4px -15px 20px var(--blazing-glow-color),
+            2px -20px 30px rgba(214, 153, 249, 0.5);
+    }
+
+    75% {
+        box-shadow:
+            0 3px 20px var(--blazing-color),
+            0 0 20px var(--blazing-color),
+            0 -5px 10px var(--blazing-mid-glow),
+            3px -5px 5px var(--blazing-glow-color),
+            -4px -10px 10px var(--blazing-glow-color),
+            2px -20px 30px rgba(214, 153, 249, 0.5),
+            0px -25px 40px rgba(255, 255, 0, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 3px 20px var(--blazing-color),
+            0 0 20px var(--blazing-color),
+            0 0 10px var(--blazing-mid-glow),
+            4px -5px 6px var(--blazing-glow-color),
+            -4px -10px 10px var(--blazing-glow-color),
+            0 -10px 30px var(--blazing-glow-color);
+    }
+}
